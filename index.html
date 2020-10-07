@@ -75,3 +75,14 @@ import define from "https://api.observablehq.com/@observablehq/downloading-and-e
 const inspect = Inspector.into("#observablehq-7cf33c38");
 (new Runtime).module(define, name => name === "graphic" ? inspect() : undefined);
 </script>
+
+<div id="observablehq-7dcdfdf4">
+  <div class="observablehq-chart"></div>
+</div>
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@d3/streamgraph-transitions.js?v=3";
+  (new Runtime).module(define, name => {
+    if (name === "chart") return Inspector.into("#observablehq-7dcdfdf4 .observablehq-chart")();
+  });
+</script>
