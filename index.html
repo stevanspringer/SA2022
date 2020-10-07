@@ -67,3 +67,11 @@ function keyPush(evt) {
 	}
 }
 </script>
+
+<div id="observablehq-7cf33c38"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@observablehq/downloading-and-embedding-notebooks.js?v=3";
+const inspect = Inspector.into("#observablehq-7cf33c38");
+(new Runtime).module(define, name => name === "graphic" ? inspect() : undefined);
+</script>
