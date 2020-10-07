@@ -102,3 +102,11 @@ import define from "https://api.observablehq.com/@mbostock/scrubber.js?v=3";
 const inspect = Inspector.into("#observablehq-f921f675");
 (new Runtime).module(define, name => name === "viewof i" ? inspect() : undefined);
 </script>
+
+<div id="observablehq-ca4f929b"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@uwdata/a-minimal-introduction-to-javascript-and-observable.js?v=3";
+const inspect = Inspector.into("#observablehq-ca4f929b");
+(new Runtime).module(define, name => name === "result" ? inspect() : undefined);
+</script>
