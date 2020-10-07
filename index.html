@@ -103,6 +103,14 @@ const inspect = Inspector.into("#observablehq-ca4f929b");
 (new Runtime).module(define, name => name === "result" ? inspect() : undefined);
 </script>
 
+<div id="observablehq-368f123f"></div>
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+import define from "https://api.observablehq.com/@mbostock/tree-of-life.js?v=3";
+const inspect = Inspector.into("#observablehq-368f123f");
+(new Runtime).module(define, name => name === "viewof showLength" ? inspect() : undefined);
+</script>
+
 <div id="observablehq-267e383e"></div>
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
