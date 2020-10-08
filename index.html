@@ -114,3 +114,16 @@ const inspect = Inspector.into("#observablehq-368f123f");
     if (name === "update") return Inspector.into("#observablehq-ad69be52 .observablehq-update")();
   });
 </script>
+
+<div id="observablehq-ad014965">
+  <div class="observablehq-viewof-p"></div>
+  <div class="observablehq-graphic"></div>
+</div>
+<script type="module">
+  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+  import define from "https://api.observablehq.com/@stevan/hwe.js?v=3";
+  (new Runtime).module(define, name => {
+    if (name === "viewof p") return Inspector.into("#observablehq-ad014965 .observablehq-viewof-p")();
+    if (name === "graphic") return Inspector.into("#observablehq-ad014965 .observablehq-graphic")();
+  });
+</script>
