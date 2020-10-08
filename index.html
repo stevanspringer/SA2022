@@ -68,52 +68,6 @@ function keyPush(evt) {
 }
 </script>
 
-<div id="observablehq-7cf33c38"></div>
-<script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@observablehq/downloading-and-embedding-notebooks.js?v=3";
-const inspect = Inspector.into("#observablehq-7cf33c38");
-(new Runtime).module(define, name => name === "graphic" ? inspect() : undefined);
-</script>
-
-<div id="observablehq-008b9209"></div>
-<script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@mbostock/scrubber.js?v=3";
-const inspect = Inspector.into("#observablehq-008b9209");
-(new Runtime).module(define, name => name === "viewof i" ? inspect() : undefined);
-</script>
-
-<div id="observablehq-ca4f929b"></div>
-<script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@uwdata/a-minimal-introduction-to-javascript-and-observable.js?v=3";
-const inspect = Inspector.into("#observablehq-ca4f929b");
-(new Runtime).module(define, name => name === "result" ? inspect() : undefined);
-</script>
-
-<div id="observablehq-368f123f"></div>
-<script type="module">
-import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-import define from "https://api.observablehq.com/@mbostock/tree-of-life.js?v=3";
-const inspect = Inspector.into("#observablehq-368f123f");
-(new Runtime).module(define, name => name === "viewof showLength" ? inspect() : undefined);
-</script>
-
-<div id="observablehq-ad69be52">
-  <div class="observablehq-viewof-showLength"></div>
-  <div class="observablehq-chart"></div>
-  <div class="observablehq-update"></div>
-</div>
-<script type="module">
-  import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-  import define from "https://api.observablehq.com/@mbostock/tree-of-life.js?v=3";
-  (new Runtime).module(define, name => {
-    if (name === "viewof showLength") return Inspector.into("#observablehq-ad69be52 .observablehq-viewof-showLength")();
-    if (name === "chart") return Inspector.into("#observablehq-ad69be52 .observablehq-chart")();
-    if (name === "update") return Inspector.into("#observablehq-ad69be52 .observablehq-update")();
-  });
-</script>
 
 <div id="observablehq-ad014965">
   <div class="observablehq-viewof-p"></div>
