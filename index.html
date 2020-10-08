@@ -1,14 +1,24 @@
-<div id="observablehq-b19deab2">
+<div id="observablehq-09c91c27">
   <div class="observablehq-text1"></div>
+  <div class="observablehq-equation1"></div>
+  <div class="observablehq-text2"></div>
+  <div class="observablehq-equation2"></div>
+  <div class="observablehq-text3"></div>
   <div class="observablehq-viewof-p"></div>
-  <div class="observablehq-graphic"></div>
+  <div class="observablehq-graphic1"></div>
+  <div class="observablehq-text4"></div>
 </div>
 <script type="module">
   import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
   import define from "https://api.observablehq.com/@stevan/hardy-weinberg-equilibrium.js?v=3";
   (new Runtime).module(define, name => {
-    if (name === "text1") return Inspector.into("#observablehq-b19deab2 .observablehq-text1")();
-    if (name === "viewof p") return Inspector.into("#observablehq-b19deab2 .observablehq-viewof-p")();
-    if (name === "graphic") return Inspector.into("#observablehq-b19deab2 .observablehq-graphic")();
+    if (name === "text1") return Inspector.into("#observablehq-09c91c27 .observablehq-text1")();
+    if (name === "equation1") return Inspector.into("#observablehq-09c91c27 .observablehq-equation1")();
+    if (name === "text2") return Inspector.into("#observablehq-09c91c27 .observablehq-text2")();
+    if (name === "equation2") return Inspector.into("#observablehq-09c91c27 .observablehq-equation2")();
+    if (name === "text3") return Inspector.into("#observablehq-09c91c27 .observablehq-text3")();
+    if (name === "viewof p") return Inspector.into("#observablehq-09c91c27 .observablehq-viewof-p")();
+    if (name === "graphic1") return Inspector.into("#observablehq-09c91c27 .observablehq-graphic1")();
+    if (name === "text4") return Inspector.into("#observablehq-09c91c27 .observablehq-text4")();
   });
 </script>
